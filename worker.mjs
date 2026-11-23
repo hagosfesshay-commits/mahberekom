@@ -57,6 +57,6 @@ export default {
      const body=await req.text(); if(body.length>8000)return fail('Meddelandet är för långt.',413);
      req=new Request(req.url,{method:'POST',body});
    }
-   return env.OFFICE.get(env.OFFICE.idFromName('hisings-backa')).fetch(req);
+   return env.OFFICE.get(env.OFFICE.idFromName('goteborg-med-omnejd')).fetch(req);
  }
 };
